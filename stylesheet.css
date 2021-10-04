@@ -1,0 +1,279 @@
+/* Header, Rifan Putra */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.container{
+  max-width:1170px;
+}
+
+.header{
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  height :70px;
+  width:100%;
+  background-color:rgba(255, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width:110px;
+  margin-top:2px;
+  margin-right: 15px;
+}
+
+.header-left  {
+  float: left;
+}
+
+.menu-icon{
+    float: right;
+    cursor: pointer;
+    line-height: 48px;
+    padding: 20px 15px;
+    transition: background-color .2s;
+  /* Gantikan property display ke none */
+  display:none;
+}
+
+
+
+.header-right {
+  float:right;
+
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  line-height :65px;
+  padding-left:50px;
+  padding-right:50px;
+  color:white;
+  display:block;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+.dropdown:hover .isidari-dropdown {
+    display: block;
+  }
+
+  .isidari-dropdown a:hover {
+    color: #7B7D7D ;
+  }
+
+  .isidari-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .isidari-dropdown a {
+    color: rgba(255, 0, 0, 0.9);
+  }
+
+  .isidari-dropdown a:hover {
+    color: #232323 ;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+/* Konten, Muhammad Rizqi I */
+.top-wrapper{
+  padding: 180px 0 100px 0;
+  background-image: url(https://cdn.pixabay.com/photo/2020/11/07/20/29/injection-5722329_960_720.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1{
+  opacity: 0.8;
+  font-size: 56px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p{
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.btn-wrapper{
+  margin: 20px 0;
+  background-color: #185ADB;
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-wrapper:hover{
+  opacity: 1;
+}
+.btn-wrapper:active{
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.protokol{
+  margin-top: 50px;
+  padding: 100px 80px;
+}
+
+.protokol-title{
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.protokol-content img{
+  width: 200px;
+  height: 200px;
+}
+.protokol-content{
+  display: block;
+  float: left;
+  margin-right: 40px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.protokol-content h4{
+  font-size: 20px;
+  margin-top: 30px;
+}
+.protokol-content p{
+  font-size: 18px;
+  font-family: cursive;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Konten, Aldhaf Fadilah */
+.artikel{
+  margin-top: 50px;
+  padding: 100px 80px;
+  clear: both;
+  text-align: center;
+}
+.artikel-title{
+  font-size: 28px;
+  text-align: center;
+  /* border-bottom: 2px solid #dee7ec; */
+  padding-bottom: 5px;
+}
+.artikel p{
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.btn-artikel{
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.btn-artikel:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* Kritik Saran, Ridho Azkia Azhar */
+.form{
+  padding: 100px 80px;
+}
+input[type="text"],
+text,
+textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"]{
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #45a049;
+}
+
+/* Footer, Rifan Putra */
+footer .container {
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+footer img {
+  width:125px;
+}
+
+footer p {
+  color:#F4F9F9;
+  font-size:15px;
+}
+footer{
+  padding-top:30px;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.tagp {
+    letter-spacing: 10px    ;
+}
+.covidhotline {
+    text-align:right;
+   color: #F0CA11 ;
+   font-size: 18px;
+}
